@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jQuery火焰灯效果导航菜</title>
+
+
+
+<style type="text/css">
+*{margin:0;padding:0;list-style-type:none;}
+a,img{border:0;}
+body{background:#eeeeee;color:#333333;font-family:'宋体',Verdana, Geneva, sans-serif;}
+.zxx_test_list{width:520px;margin:40px auto;}
+.zxx_test_list{border-bottom:0; padding-bottom:40px;}
+.zxx_test_list h3{margin-top:35px;margin-bottom:20px;}
+</style>
+
+<link rel="stylesheet" href="css/lava_lamp_demo.css" type="text/css" />
+
+<script type="text/javascript" src="js/jquery-1.2.6.pack.js"></script>
+<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="js/jquery.lavalamp.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("#1, #2, #3").lavaLamp({
+		fx: "backout", //缓动类型
+		speed: 700, //缓动时间
+		click: function(event, menuItem) {
+			return false; //单击触发事件
+		}
+	});
+});
+</script>
+
+</head>
+
+<body>
+
+
+<div class="zxx_test_list">
+	<h3>1.背景图片</h3>
+	<ul class="lava_with_image fix" id="1">
+		<li class="current"><a href="#zhangxinxu">圣诞节</a></li>
+		<li><a href="#zhangxinxu">地震</a></li>
+		<li><a href="#zhangxinxu">股市</a></li>
+		<li><a href="#zhangxinxu">《十月围城》</a></li>
+		<li><a href="#zhangxinxu">无线音乐咪咕汇</a></li>
+	</ul>
+	<h3>2.没有背景图片</h3>
+	<ul class="lava_no_image fix" id="2">
+		<li class="current"><a href="#zhangxinxu">圣诞节</a></li>
+		<li><a href="#zhangxinxu">地震</a></li>
+		<li><a href="#zhangxinxu">股市</a></li>
+		<li><a href="#zhangxinxu">《十月围城》</a></li>
+		<li><a href="#zhangxinxu">无线音乐咪咕汇</a></li>
+	</ul>
+	<h3>3.下边框</h3>
+	<ul class="lava_with_border fix" id="3">
+		<li class="current"><a href="#zhangxinxu">圣诞节</a></li>
+		<li><a href="#zhangxinxu">地震</a></li>
+		<li><a href="#zhangxinxu">股市</a></li>
+		<li><a href="#zhangxinxu">《十月围城》</a></li>
+		<li><a href="#zhangxinxu">无线音乐咪咕汇</a></li>
+	</ul>
+</div>
+
+</body>
+</html>
